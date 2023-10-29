@@ -10,14 +10,11 @@ function App() {
 
   useEffect(()=>{
 
-    return ()=>{
       const check = localStorage.getItem('loggedIn')
 
       if(check === 'true'){
         setIsLoggedIn(true);
       }
-
-    }
 
 
   }, []);
